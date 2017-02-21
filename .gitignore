@@ -3,6 +3,6 @@
 *.bcf
 *.blg
 *.log
-*.pdf
 *.run.xml
 *.swp
+bib.pdf
