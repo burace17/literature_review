@@ -1,13 +1,28 @@
 \documentclass{article}
 \usepackage[american]{babel}
 \usepackage[citestyle=apa,style=apa,backend=biber]{biblatex}
+\usepackage{scrextend}
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{bibliography.bib}
 
+\newenvironment{annotation}{\begin{addmargin}[2.5em]{0em} \begin{flushleft}}{\end{flushleft} \end{addmargin}}
+
 \begin{document}
-\fullcitebib{Roman20132266}
-This is a different test
-\fullcitebib{Weber201023}
-This is another test
+\fullcitebib{Zhao6746513}
+\begin{annotation}
+The authors present a review of what the current literature says about Internet of Things Security. 
+It details the security problems in the perception, network, and application layers of the Internet of Things structure. 
+It also presents the current security mechanisms present in these layers. 
+This source will help me answer my research questions regarding the current security risks and the current security mechanisms present in the Internet of Things currently.
+This article also provides a useful flowchart to allow readers to visualize the security mechanisms present in the Internet of Things.  
+\end{annotation}
+
+\fullcitebib{Granjal7005393}
+\begin{annotation}
+  This article presents an analysis of the state of security in the Internet of Things (IoT). It defines the four layers of the IoT architecture and presents the security
+  problems present in each layer. It also discusses the current research regarding IoT security. Currently, there is a lot of research being done on how to utilize existing
+  encryption algorithms on low power and speed devices that are prominant in the IoT. I plan to use this article to answer my questions regarding the current state of IoT
+  security and what is being done to mitigate the existing security risks. 
+\end{annotation}
 \end{document}
 
