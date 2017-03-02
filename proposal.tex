@@ -1,0 +1,39 @@
+\documentclass[letterpaper, 12pt]{texMemo}
+\usepackage[american]{babel}
+\usepackage[citestyle=apa,style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
+\memoto{Dr. William Hsu}
+\memofrom{Blair Urish}
+\memosubject{Proposal to write a literature review examining the security of the Internet of Things}
+\memodate{February 27, 2017}
+
+\newenvironment{annotation}{\begin{addmargin}[2.5em]{0em} \begin{flushleft}}{\end{flushleft} \end{addmargin}}
+
+\begin{document}
+\maketitle
+\begin{flushleft}
+\subsection*{Introduction}
+The purpose of this memo is to propose a literature review for analyzing the security of the Internet of Things (IoT). 
+This literature review will first synthesize the current research regarding the security risks IoT devices face today. 
+Next, it will synthesize the research regarding current security features and risk mitigation techniques.  
+Finally, the literature review will analyze the current standards for IoT devices and any future standards that are being considered.  
+
+\subsection*{Background}
+\textit{Definition of the Internet of Things}\\ 
+~\newline
+  The Internet of Things refers to the connection of physical "things" to the Internet. (\cite{Kozlov}). They are commonly referred to as "smart" devices. 
+Through the IoT, the Internet has found its way into many household items, including refrigerators, TVs, door locks, toasters, and many others. 
+However, introducing the Internet to all of these new areas has also introduced security risks. Computers have always faced security issues, and now household items
+face similiar risks.\\ 
+~\newline
+\textit{Security Risks}
+~\newline
+
+
+\newpage
+Bibliography\\
+~\newline
+  \fullcite{Kozlov}
+\end{flushleft}
+\end{document}
