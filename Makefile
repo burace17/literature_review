@@ -8,6 +8,8 @@ visualaids:
 	pdflatex visualaids.tex
 proposal:
 	pdflatex proposal.tex
+	biber proposal
+	pdflatex proposal.tex
 clean:
 	rm *.aux
 	rm *.bbl
