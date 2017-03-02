@@ -4,6 +4,10 @@ fullbib:
 	pdflatex bib.tex
 	biber bib
 	pdflatex bib.tex
+visualaids:
+	pdflatex visualaids.tex
+proposal:
+	pdflatex proposal.tex
 clean:
 	rm *.aux
 	rm *.bbl
