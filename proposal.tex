@@ -1,5 +1,6 @@
 \documentclass[letterpaper, 12pt]{texMemo}
 \usepackage[american]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[citestyle=apa,style=apa,backend=biber]{biblatex}
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{bibliography.bib}
@@ -20,38 +21,77 @@ Next, it will synthesize the research regarding current security features and ri
 Finally, the literature review will analyze the current standards for IoT devices and any future standards that are being considered.  
 
 \subsection*{Background}
-\textit{Definition of the Internet of Things}\\ 
+\textit{Historical Background}\\ 
 ~\newline
-  The Internet of Things refers to the connection of physical "things" to the Internet. (\cite{Kozlov}). They are commonly referred to as "smart" devices. 
-Through the IoT, the Internet has found its way into many household items, including refrigerators, TVs, door locks, toasters, and many others. 
-However, introducing the Internet to all of these new areas has also introduced security risks. Computers have always faced security issues, and now household items
-face similiar risks.\\ 
+An Internet of Things device can be defined as a physical "thing" that is connected to the Internet. By 2020, it is expected that there will be 
+25 million IoT devices connected to the Internet. (\cite{Martinez1}). With so many devices, it is important that manufacturers take security very seriously. 
+In September 2016, a security researcher named Brian Krebs had his website temporarily taken down due to a Distributed Denial of Service attack. The attacker
+used thousands of malware-infected IoT devices and sent 600 Gigabits per second of traffic to Krebs' blog. (\cite{Krebs}). The malware, called Mirai, 
+infected IoT devices with poor security. An analysis showed that the devices were mainly CCTV cameras, DVRs, and routers. (\cite{Incapsula}).\\
 ~\newline
-
-\textit{Security Risks}\\
+\textit{jkl}\\
 ~\newline
-The Internet of Things does not just include the devices themselves. It also includes the applications used to control them and the network infrastructure used for connections. 
-This architecture is generally separated into three layers: perception, network, and application. (\cite{Zhao6746513}). The perception layer includes the physical devices themselves. 
-The application layer would include applications used to control the devices in the perception layer. Some literature also defines a support layer, which helps connect the perception layer
-to the network layer. (\cite{Suo6188257}). Finally, the literature defines the network layer. It allows the perception layer to transfer information to the application layer.\\ 
+\textit{Purpose of the Research}
 ~\newline
-
-\textit{Security Risks in the Perception Layer}\\
-~\newline
-In the perception layer, physical security is a major concern. Many devices are in public areas where their data could be easily intercepted. Some literature states that the interception of
-data at this layer could pose a security risk to the entire network. (\cite{Zhao6746513}). However, other literature says the need for security in the perception layer is of lower priority and that
-the integrity of the data should be verified at a different layer. (\cite{Kozlov}).\\
+As more IoT devices are connected to the Internet, the threat of further attacks due to a lack of security becomes even higher. The damage these attacks could
+cause will also become higher. The purpose of this literature review is to synthesize the current research on this topic into one article and to find areas that require 
+further research.\\
 ~\newline
 
-\textit{Security Risks in the Network Layer}\\
+\subsection*{Proposal}
+\underline{Research Questions}\\
 ~\newline
-More is known about security risks in the network layer because these risks are not unique to the IoT. However, attacks such as man-in-the-middle and distributed denial of service are still common. 
-Literature considers the security in the network layer to be fairly complete. (\cite{Kozlov}).\\
+\textit{What types of security risks do IoT devices face today?}\\
+The purpose of this question is to investigate what types of threats there are to current IoT devices. In order to develop new standards and threat mitigation techniques,
+the current threats must be understood. \\
+~\newline
+\textit{What types of security features do IoT devices have now and are they effective against current threats?}\\
+In order for new security features to be developed, one must fully understand the current features and how effective they have been. \\
+~\newline
+\textit{What new security features have been proposed?}\\
+This question will address the current research being done on developing new security features for IoT devices. It will also provide a review of any conflict that exists
+in the literature regarding this issue. \\
+~\newline
+\textit{Are there any security standards in place or are being considered?}\\
+Many organizations and governments provide standards for certain industries. This question will examine if there are any in place for the IoT or if there are any being
+currently considered.\\ 
+~\newline
+\underline{Report Description}\\
+~\newline
+\textit{Introduction}\\
+The section will provide background information about the state of Internet of Things security.\\ 
+~\newline
+\textit{Security Risks for Current IoT Devices}\\
+This section will provide a comprehensive look into the current security risks IoT devices face today. \\
+~\newline
+\textit{Security Features of Current IoT Devices}\\
+This section will analyze what security features IoT devices have today and how effective they are.\\
+~\newline
+\textit{Future Security Features}\\
+This section will synthesize research being done to develop new security features. It will also mention any conflict that 
+exists in the literature.\\
+~\newline
+\textit{Current and Future Security Standards}\\
+This section will provide an overview of current standards imposed by organizations and governments. It will also look at 
+future standards being considered.\\
+~\newline
+\textit{Conclusion}\\
+This section will summarize the findings of the report.\\
 ~\newline
 
-\textit{Security Risks in the Application Layer}\\
+\subsection*{Methods}
+~\newline
+To create the report, information from academic journals and conference procedings will be used. These articles are found in 
+databases such as Scopus, IEEE, and the ACM. Search terms such as "Internet of Things" and "security" will be used to locate
+relavent articles in the databases. Web sources from industry leaders will be used to provide background information surrounding
+the topic.\\ 
 ~\newline
 
+\subsection*{Conclusion}
+~\newline
+The Internet of Things is a growing industry that must keep security in mind. The proposed literature review will gather relevant 
+research regarding the current security risks, features, and standards in the IoT. It will also point out any gaps or conflict in
+the literature. 
 
 \newpage
 Bibliography\\
@@ -61,5 +101,11 @@ Bibliography\\
 \fullcite{Zhao6746513}\\
 ~\newline
 \fullcite{Suo6188257}\\
+~\newline
+\fullcite{Martinez1}\\
+~\newline
+\fullcite{Krebs}\\
+~\newline
+\fullcite{Incapsula}\\
 \end{flushleft}
 \end{document}

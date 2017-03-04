@@ -1,6 +1,9 @@
 \documentclass[letterpaper, 12pt]{texMemo}
 \usepackage[american]{babel}
 \usepackage{graphicx}
+\usepackage[citestyle=apa,style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
 \memoto{Dr. William Hsu}
 \memofrom{Blair Urish}
 \memosubject{Visual Aids}
@@ -26,6 +29,9 @@ This figure identifies the 3 layers of the Internet of Things architecture. It p
 It is important for the reader to understand the differences between each of the layers of the Internet of Things Architecture. 
 This figure provides examples of devices commonly found in each layer and what type of security is necessary. 
 
-
+\newpage
+Bibliography\\
+~\newline
+  \fullcite{Zhao6746513}
 \end{flushleft}
 \end{document}

@@ -1,0 +1,13 @@
+Proposal:
+
+Move the part in the introduction where the literature review structure is defined into the proposal section.
+
+Background should primarily focus on the context of the review. Maybe talk about the history. 
+No need to give an in depth definition of the IoT. Assume reader has a good amount of knowledge beforehand. 
+
+
+
+
+Visual aids:
+
+left align figure caption

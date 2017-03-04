@@ -6,6 +6,8 @@ fullbib:
 	pdflatex bib.tex
 visualaids:
 	pdflatex visualaids.tex
+	biber visualaids
+	pdflatex visualaids.tex
 proposal:
 	pdflatex proposal.tex
 	biber proposal
