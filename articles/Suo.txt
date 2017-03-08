@@ -1,0 +1,12 @@
+- gives security requirements at each level of the architecture
+- gives status of research for various security mechanisms:
+	- encryption: not much research has been done yet.
+	- communication security/protocols: need to research better preventative measures for DDoS and disaster recovery.
+	- protect data at preception layer: research is of a lower demand because security at that layer cannot be increased easily. 
+		- privacy is another major concern at this layer.
+	- crypto algorithms:
+		- details the use cases for major algorithms
+		- need more research
+
+- other challenges:
+	- 

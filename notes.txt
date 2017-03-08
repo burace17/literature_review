@@ -11,3 +11,9 @@ No need to give an in depth definition of the IoT. Assume reader has a good amou
 Visual aids:
 
 left align figure caption
+
+
+
+Citations:
+
+full quote - include page number

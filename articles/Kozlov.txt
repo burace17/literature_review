@@ -1,0 +1,6 @@
+- provides overview of IoT architecture 
+- provides many real world examples of threats IoT devices face.
+- provides overview of EU legislation
+	- user right to be "forgotten"
+	- control over user's own data
+
