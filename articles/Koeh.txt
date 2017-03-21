@@ -1,0 +1,26 @@
+- interoperable security
+	- infeasible that IoT implements all security protocols in all layers
+	 - signel security protocol suite that provides full security service should be standardized.
+
+
+- Constrained Application Protocol
+	- greatly reduces overhead over HTTP
+	- reduces latency on low power networks 
+	- uses UDP
+	- use DTLS for security
+
+- DTLS
+
+- most want to reuse existing protocols to protect IoT, but they require adaptation
+- DTLS receives most attention
+
+- p.6 Wouters proposal about DTLS handshake
+
+-----
+
+- feasible to use DTLS for end-to-end security
+
+- literature questions if these specialized standards are necessary 
+	- points to mobile phone industry. phones got powerful enough to not need specialized standards
+
+

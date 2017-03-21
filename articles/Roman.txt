@@ -1,0 +1,11 @@
+- protocol and network security:
+	- devices must have a secure comm channel with more powerful devices
+	- "cryptography is the cornerstone for network infrastructure protection"
+	- some devices are not powerful enough to use complex encryption algorithms
+
+- current research:
+	- lists mature and work in progress standards
+	- government recommendations
+	- more work is necessary 
+	- provides overview of encryption methods 
+	- 

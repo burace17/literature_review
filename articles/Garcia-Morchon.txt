@@ -1,0 +1,25 @@
+Host identitiy protocol 
+	- allow for DH key exchange
+	- two handshakes
+		- HIP Base Exchange (BEX) uses public key crypto
+		- HIP Diet Exchange (DEX) lightweight, static DH, for constrained devices
+
+DTLS
+	- TLS over UDP
+	- mandatory standard for protection of COAP messages
+
+
+paper proposes solution to securing IoT with focus on
+- secure network access
+- key management
+- secure communication
+
+contributions:
+- proposed HIP-PSK
+- uses both HIP and DTLS
+- integration of AMIKEY
+
+findings:
+- HIP is smaller in  memory footprint
+- HIP has less communication overhead
+- DTLS allows for better interoperability but compromises efficiency

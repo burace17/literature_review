@@ -1,0 +1,18 @@
+- provides examples of different network design approaches that use the IoT
+	- centralized approach
+	- collaborative
+	- connected intranets
+	- distributed
+
+- security overview in the distributed approach
+	- essential to implement efficient crypto algos
+	- identity management
+	
+
+- analysis of threats
+	- DDoS
+	- physical damage
+	- eavesdropping
+	- node capture
+	- controlling
+
