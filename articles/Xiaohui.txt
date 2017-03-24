@@ -1,0 +1,27 @@
+security issues in the perception layer:
+- physical security - attacker can replace components
+- authentication - devices are not powerful 
+
+- devices cannot run complex security protocols
+- malicious code
+- IoT faces existing issues from TCP/IP
+
+network layer:
+-
+
+application layer:
+- malicious code
+- software vulnerabilities
+- own design flaws
+
+
+security mechanisms:
+- certification
+- public key infrastructure
+- access control
+- encryption
+	- hop to hop or end to end
+	- must be efficient
+
+
+

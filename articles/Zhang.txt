@@ -1,0 +1,41 @@
+- auth options need to be simple
+
+security threats in two categories:
+- first, similar to conventional networking
+	- against confidentiality
+	- integrity and availability
+	- IoT at times collects sensitive data
+	- information may disclose user information
+
+
+Naming, identification, auth:
+
+- current security feature: Bluetooth - pairing: password required - then data is transmitted using encryption
+
+- naming challenge: massive scale, objects more complex. conventional naming not sufficient
+
+
+auth model:
+
+pairing:
+	- password or PSK exchanged
+	- mechanisms to prevent eavesdropping
+	
+
+auth by gateway
+	- uses gateway between devices
+	- research being done using COAP, DTLS for security.
+	- cons: single point of failure, bottlenecking
+	- 
+
+auth by security token
+- gateway gives a security token to the devices. may have a TTL
+- peers exchange data using token
+- cons: still a single failure point, design of token may be difficult
+
+auth by trust chain
+- chain of trust: peer A trusts peer B, etc.
+- cons: more complex, may not work on low power devices
+
+auth by global trust tree
+

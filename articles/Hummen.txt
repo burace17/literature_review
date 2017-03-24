@@ -1,0 +1,21 @@
+single malicious host can use handshake to cause DoS
+article uses HIP DEX 
+proposes protocol extensions for HIP DEX
+
+uses puzzle based mechanisms to verify connection before doing handshake
+
+
+HIP DEX issue:
+DH operations have high overhead
+
+
+Solutions:
+- reduce public key based operations by saving and resuming existing sessions.
+- propose attack detection strategy to prevent denial of service attack against expensive operations
+- propose adaptive retransmission strategy
+
+possible attacks:
+replay attacks - session resumption
+DoS attacks - session ticket
+
+

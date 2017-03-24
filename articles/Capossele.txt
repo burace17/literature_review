@@ -1,0 +1,20 @@
+COAP proposes the use of DTLS
+DTLS initially designed for traditional networks 
+literature proposes 6LOWPAN header compression. 
+authors intend to develop a fully optimized implementation of DTLS for COAP
+
+DTLS
+- heavy overhead for IoT applications
+- important to minimize code size and messages
+- denial of service attacks are possible but mitigated through the use of stateless cookies
+- handshakes are the most expenisve part of the protocol
+- reestablishing connections is very inefficient
+- authors adopt a caching strategy to store security associations that are frequently used
+
+experiment:
+- authors optimized modular arithmetic on large integers
+- used an ECC library 
+
+results:
+- reduced ROM occupancy by almost 23%
+
