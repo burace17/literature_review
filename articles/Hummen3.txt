@@ -1,0 +1,25 @@
+paper presents viable strategy for using certificates for authentication with IoT
+focuses on the DTLS protocol
+
+full certificate based handshake takes 15 messages
+may exceed frame size of IEEE 802.15.4
+
+additional overhead results from the need to verify the validity of the certificate (may need to do time sync)
+
+signature verification and DH key areement dominate crypto operation time for DTLS
+
+cryptographic per handshake overheads add 15 seconds for certificate based DTLS
+
+initial experiments find significant overhead added when using certificate based DTLS
+
+------------
+
+article proposes allowing a gateway to verify certificate chain
+
+article proposes only performing expensive operations once during handshake. causes slight increase in memory usage
+
+also proposes that the IoT devices themselves do not perform the initial handshake. expenisve operations are performed on other device
+
+
+
+
