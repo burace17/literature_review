@@ -12,10 +12,10 @@
 
 \fullcitebib{Capossele}
 \begin{annotation}
-The Datagram Transport Layer Security (DTLS) protocol has been widely considered for use with the IoT, but one key problem has been its efficiency. The authors for this article present their
+The Datagram Transport Layer Security (DTLS) protocol has been widely considered for use with the Internet of Things (IoT), but one key problem has been its efficiency. The authors for this article present their
 own solution for improving the efficiency of the protocol. Through the use of optimized assembly code, they were able to reduce the number of memory operations when doing arithmetic on large
 integers. They were also able to reduce the execution time of signature verifications. I plan to use this article to demonstrate a solution to a widely acknowledged problem in the literature which
-is the efficiency of the DTLS protocol. Other literature suggests abandoning the protocol and I will use this source to present another approach. 
+is the efficiency of the DTLS protocol. Some literature suggests that the protocol be abandoned and I will use this source to present another approach. 
 \end{annotation}
 
 \fullcitebib{ftc}
@@ -23,7 +23,7 @@ is the efficiency of the DTLS protocol. Other literature suggests abandoning the
 In January 2015, the Federal Trade Commission (FTC) released a report detailing their recommendations to manufacturers regarding the Internet of Things security. They recommended that companies design their
 products with security in mind from the start. They also suggested that companies minimize the data they connect on customers and notify customers if their data is being collected. With regard to 
 legislation, the FTC did not recommend any new laws regulating the IoT. However, they recommended that Congress enact general data security legislation that will increase IoT security and technology 
-security in general. I plan to use this report to answer my research question about government action on IoT security.
+security in general. This report will be used to answer my research question about government action on IoT security.
 \end{annotation}
 
 \fullcitebib{Garcia-Morchon:2013:SII:2462096.2462117}
@@ -38,11 +38,18 @@ than the commonly studied standard, DTLS.
 \begin{annotation}
 This article presents an analysis of the state of security in the Internet of Things (IoT). It defines the four layers of the IoT architecture and presents the security
 problems present in each layer. It also discusses the current research regarding IoT security. Currently, there is a lot of research being done on how to utilize existing
-encryption algorithms on low power and speed devices that are prominant in the IoT. I plan to use this article to answer my questions regarding the current state of IoT
+encryption algorithms on low power and speed devices that are common in the IoT. I plan to use this article to answer my questions regarding the current state of IoT
 security and what is being done to mitigate the existing security risks. 
 \end{annotation}
 
 \newpage
+\fullcitebib{Incapsula}
+\begin{annotation}
+Most literature cites theoretical examples of attacks that IoT devices can face but does not provide any real world examples of those attacks. This article analyzes a recent distributed denial of 
+service attack on a prominent security researcher's website. The attacker used thousands of IoT devices that had been infected with malware to carry out the attack. The article also analyzes the
+recently released source code for the malware and speculates about the origin of the malware. I will use this article to provide a real world example of an attack being committed using IoT devices with poor security. 
+\end{annotation}
+
 \fullcitebib{Hummen}
 \begin{annotation}
 This article proposes several extensions to the Host Identity Protocol Diet EXchange (HIP DEX) which improve security and performance. The issues the article identifies include the performance impact of 
@@ -54,15 +61,8 @@ the areas mentioned. This article will be used in the final report to provide in
 \begin{annotation}
 The authors for this report analyze ways to make the use of certificates for authentication with IoT devices viable. They identify existing problems such as certificate authentication exceeding the
 frame size specified by IEEE 802.15.4. They also identify significant overhead from verifying the validity of the certificates, signature verification, and Diffie-Hellman key agreement. One of their
-proposed solutions is to setup a gateway that verifies the certificate chain between the devices. This allows the expenisve processing to be done on a faster device. I plan to use this article to discuss
-new security mechanisms that are being considered.
-\end{annotation}
-
-\fullcitebib{Incapsula}
-\begin{annotation}
-Most literature cites theoretical examples of attacks that IoT devices can face but does not provide any real world examples of those attacks. This article analyzes a recent distributed denial of 
-service attack on a prominent security researcher's website. The attacker used thousands of IoT devices that had been infected with malware to carry out the attack. The article also analyzes the
-recently released source code for the malware and speculates about the origin of the malware. I will use this article to provide a real world example of an attack being committed using IoT devices with poor security. 
+proposed solutions is to setup a gateway that verifies the certificate chain between the devices. This allows the expenisve processing to be done on a faster device. The article presents a new approach
+to IoT security which I plan to mention in the security mechanisms section of the final report.
 \end{annotation}
 
 \fullcitebib{Keoh6817545}
@@ -75,7 +75,10 @@ ensure that DTLS can be used as the standard for providing security to IoT devic
 \newpage
 \fullcitebib{Khari}
 \begin{annotation}
-
+This article includes summaries of various scholarly works regarding Internet of Things security. Through synthesis of the literature, the authors define the architecture of the
+IoT as a series of layers. The application layer includes things like the intelligent transportation system, smart cities, and telemedicine. The network layer includes things like the Internet and Bluetooth.
+Finally, the sensor layer includes things like RFID and GPS. The authors then list security recommendations for each layer. I will use this article to provide background information and to find additional
+resources through its literature review. 
 \end{annotation}
 
 \fullcitebib{Kozlov}
@@ -92,16 +95,17 @@ research regarding the negotiation of dynamic keys between unknown entities. I w
 
 \fullcitebib{Roman20132266}
 \begin{annotation}
-There are several different ways to design networks that include the Internet of Things. They include the centralized apprach, collaborative apprach, and the distributed approach. This article focuses on the
-distributed approach, but provides background information on the others. It provides examples and diagrams about how the networks are designed. It then goes into the security issues found in the distributed
+There are several different ways to design networks that include the Internet of Things. They include the centralized approach, collaborative approach, and the distributed approach. This article focuses on the
+distributed approach, but provides background information on the others. The article provides examples and diagrams about how the networks are designed. It then goes into the security issues found in the distributed
 approach specifically. Finally, the article provides an overview of common attacks used on Internet of Things devices. I plan to use this article to address my research question regarding current security
 risks IoT devices face today. I also plan to use this article to provide background information on network designs that utilize the IoT. 
 \end{annotation}
 
+\newpage
 \fullcitebib{Stupp}
 \begin{annotation}
 This article reports on European Union lawmakers plans to draft new rules for IoT devices. One of the proposals would add a labeling system similar to home appliances that would
-certify if a device meets security guidances. The rules would encourage, but not require, hardware manufacturers to get their devices certified. The rules would also regulatate how companies 
+certify if a device meets security guidance. The rules would encourage, but not require, hardware manufacturers to get their devices certified. The rules would also regulate how companies 
 can use consumers' information. The article did not mention when the commission would consider the labeling provision. I will use this article to provide an example of what is currently being considered in Europe regarding the regulation of the Internet of Things. 
 \end{annotation}
 
@@ -120,6 +124,15 @@ The report also mentions various security mechanisms IoT devices can use. They i
 faced by IoT devices.
 \end{annotation}
 
+\fullcitebib{Weber201023}
+\begin{annotation}
+The author begins by discussing the security and privacy requirements for IoT devices. After that, the author discusses requirements for a legal framework governing the IoT. In this section, the author
+mentions that countries need to adopt similar laws regulating the IoT if the devices are sold on a global scale. Manufacturers need to be able to follow one legal framework instead of following a different
+one for every country they do business with. The author also evaluates how self-regulation is performing in the IoT industry today and discusses EU considerations. I will use this article to provide 
+information about requirements future IoT legislation should meet. 
+\end{annotation}
+
+\newpage
 \fullcitebib{Zhang:2015:EST:2714576.2737091}
 \begin{annotation}
 This article provides four examples of security mechanisms being considered for use in the IoT. They include authentication by gateway, security token, trust chain, and global trust tree. Each of the 
@@ -132,10 +145,10 @@ IoT devices.
 \fullcitebib{Zhao6746513}
 \begin{annotation}
 The authors present a review of what the current literature says about Internet of Things Security. 
-It details the security problems in the perception, network, and application layers of the Internet of Things structure. 
-It also presents the current security mechanisms present in these layers. 
+They detail the security problems in the perception, network, and application layers of the IoT structure. 
+The authors also synthesize the current recommendations from the literature regarding security mechanisms that should be present at each layer. For the perception layer, strong, but lightweight key management algorithms are required.
+
 This source will help me answer my research questions regarding the current security risks and the current security mechanisms present in the Internet of Things currently.
-This article also provides a useful flowchart to allow readers to visualize the security mechanisms present in the Internet of Things.  
 \end{annotation}
 \end{document}
 
