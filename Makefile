@@ -12,6 +12,10 @@ proposal:
 	pdflatex proposal.tex
 	biber proposal
 	pdflatex proposal.tex
+outline:
+	pdflatex outline.tex
+	biber outline
+	pdflatex outline.tex
 clean:
 	rm *.aux
 	rm *.bbl

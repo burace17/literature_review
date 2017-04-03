@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[american]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[citestyle=apa,style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
+\usepackage{outlines}
+\usepackage{enumitem}
+\setenumerate[1]{label=\Roman*.}
+\setenumerate[2]{label=\Alph*.}
+\setenumerate[3]{label=\roman*.}
+\setenumerate[4]{label=\alph*.}
+
+\begin{document}
+\begin{outline}[enumerate]
+\1 Introduction
+	\2 Internet of Things (IoT) security is currently not adequate.
+		\3 Many devices are vulnerable to various types of attacks.
+		\3 In September 2016, a security researcher had his website attacked by thousands of compromised IoT devices. (\cite{Krebs}; \cite{Incapsula}).
+	\2 Overview of the Literature
+		\3 The literature outlines security risks in all layers of the IoT architecture. (\cite{Xiaohui6643029}; \cite{Zhao6746513}; \cite{Suo6188257}).
+			\4 However, there is some debate as to which layers need the most attention for future research. (\cite{Zhao6746513}; \cite{Kozlov}).
+		\3 The IoT needs a complete stack of protocols to ensure security. 
+			\4 The Datagram Transport Layer Security (DTLS) protocol has received a lot of attention from researchers. 
+			\4 However, other literature suggests that the Host Identity Protocol (HIP) would be a better choice. 
+			
+\1 Methods
+\1 Security Risks for IoT Devices
+\1 Evaluating Protocols for IoT Security
+	\2 Datagram Transport Layer Security (DTLS)
+	\2 Host Identity Protocol (HIP)
+		\3 Comparison with DTLS
+		\3 HIP Diet Exchange (HIP DEX)
+
+\1 Government Standards for the IoT  
+	\2 Requirements for legislation
+	\2 U.S. Government regulation
+		\3 Federal Trade Commission Report
+	\2 EU regulation
+
+\1 Conclusion
+\end{outline}
+\end{document}
