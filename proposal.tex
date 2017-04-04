@@ -16,8 +16,8 @@
 \begin{flushleft}
 \subsection*{Introduction}
 The purpose of this memo is to propose a literature review for analyzing the security of the Internet of Things (IoT). 
-The proposed literature review will analyze the current security risks, features, and standards for IoT devices. The literature review will also provide
-an overview of any future security standards that are being considered.
+The proposed literature review will analyze the current security risks and synthesize the research being done to develop new standards and protocols. The literature review will also provide
+an overview of government action for improving IoT security.
 This document will include some background information about the topic, the specific research questions that will be addressed, an outline of
 the final report, and the methodology used to create the report.
 
@@ -43,35 +43,34 @@ are just a few examples of the problems with IoT security.\\
 ~\newline
 The literature outlines security risks in all layers of the Internet of Things architecture. (\cite{Xiaohui6643029}; \cite{Zhao6746513}; \cite{Suo6188257}). 
 There is some debate as to which layers need the most attention for future research. Some argue that risks in the perception layer present the greatest risk. (\cite{Zhao6746513}).
-Others argue that security at the perception layer is of a lower priority. (\cite{Kozlov}). 
-
-As for the current security features, the network layer has the most
-complete feature set due to lots of previous research. (\cite{Suo6188257}). Organizations such as ISO have standards in place for certain IoT devices, but manufacturers
-are not required to follow them. There are also government standards in development by the EU. (\cite{Roman6017172}) \\
+Others argue that security at the perception layer is of a lower priority. (\cite{Kozlov}). \\
 ~\newline
-\textit{Purpose of the Research}
+As for security standards, the Constrained Application Protocol suggests the use of Datagram Transport Layer Security (DTLS). However, this introduces a large amount of overhead. (\cite{Capossele}).  
+Other literature has considered the use of the Host Identity Protocol (HIP) instead. (\cite{Garcia-Morchon:2013:SII:2462096.2462117}). The literature found that HIP has less overhead when compared to
+DTLS. Some literature has even proposed extensions to HIP that would further reduce overhead (\cite{Hummen}).\\
 ~\newline
-As more IoT devices are connected to the Internet, the threat of further attacks due to a lack of security becomes even higher. The damage these attacks could
-cause will also become higher. The purpose of this literature review is to synthesize the current research on this topic into one article and to find areas that require 
-further research.\\
+\textit{Purpose of the Research}\\
+~\newline
+The purpose of this literature review is to synthesize the existing research regarding the security risks, standards, and government action into one report. There are many different points of view in the
+literature about which areas of the IoT are most at risk. There is also conflict in the literature regarding which standards should be used and how they should be implemented. With this literature review,
+all of this debate will be collected into one report which will make it easier for future research to be done. \\
 ~\newline
 
 \subsection*{Proposal}
+This section will give the specific research questions this literature review should answer and justify why the questions should be answered. This section will also provide a brief description of each section in the proposed literature review. \\
+~\newline
 \underline{Research Questions}\\
 ~\newline
 \textit{What types of security risks do IoT devices face today?}\\
 The purpose of this question is to investigate what types of threats there are to current IoT devices. In order to develop new standards and threat mitigation techniques,
 the current threats must be understood. \\
 ~\newline
-\textit{What types of security features do IoT devices have now and are they effective against current threats?}\\
-In order for new security features to be developed, one must fully understand the current features and how effective they have been. \\
+\textit{What types of security standards or protocols has the literature proposed and how will the standards be implemented?}\\
+This question will address the current research being done in order to design and implement new security standards. If there is any conflict in the literature over this issue,
+that will also be addressed. \\
 ~\newline
-\textit{What new security features have been proposed?}\\
-This question will address the current research being done on developing new security features for IoT devices. It will also provide a review of any conflict that exists
-in the literature regarding this issue. \\
-~\newline
-\textit{Are there any security standards in place or are being considered?}\\
-Many organizations and governments provide standards for certain industries. This question will examine if there are any in place for the IoT or if there are any being
+\textit{Are there any government standards in place or are there any being considered?}\\
+Many governments provide standards for certain industries. This question will examine if there are any in place for the IoT or if there are any being
 currently considered.\\ 
 ~\newline
 \underline{Report Description}\\
@@ -82,15 +81,12 @@ The section will provide background information about the state of Internet of T
 \textit{Security Risks for Current IoT Devices}\\
 This section will provide a comprehensive look into the current security risks IoT devices face today. \\
 ~\newline
-\textit{Security Features of Current IoT Devices}\\
-This section will analyze what security features IoT devices have today and how effective they are.\\
+\textit{Security Standards and Protocols}\\
+This section will synthesize research being done to develop new security standards and protocols. If there is any debate found in
+the literature, that will be explored as well.\\ 
 ~\newline
-\textit{Future Security Features}\\
-This section will synthesize research being done to develop new security features. It will also mention any conflict that 
-exists in the literature.\\
-~\newline
-\textit{Current and Future Security Standards}\\
-This section will provide an overview of current standards imposed by organizations and governments. It will also look at 
+\textit{Current and Future Government Standards}\\
+This section will provide an overview of current standards imposed by the United States government and the European Union. The section will also look at 
 future standards being considered.\\
 ~\newline
 \textit{Conclusion}\\
@@ -99,30 +95,40 @@ This section will summarize the findings of the report.\\
 
 \subsection*{Methods}
 ~\newline
-To create the report, information from academic journals and conference procedings will be used. These articles are found in 
+To create the report, information from academic journals and conference proceedings will be used. These articles are found in 
 databases such as Scopus, IEEE, and the ACM. Search terms such as "Internet of Things" and "security" will be used to locate
-relavent articles in the databases. Web sources from industry leaders will be used to provide background information surrounding
+relevant articles in the databases. Web sources from industry leaders will be used to provide background information surrounding
 the topic.\\ 
 ~\newline
 
 \subsection*{Conclusion}
 ~\newline
 The Internet of Things is a growing industry that must keep security in mind. The proposed literature review will gather relevant 
-research regarding the current security risks, features, and standards in the IoT. It will also point out any gaps or conflict in
-the literature. 
+research about the current security risks and proposed standards for the IoT while pointing out any gaps or conflict in the literature along the way. 
+The report will also gather information about current and future government standards.
 
 \newpage
 Bibliography\\
 ~\newline
+\fullcite{Capossele}\\
+~\newline
+\fullcite{Garcia-Morchon:2013:SII:2462096.2462117}\\
+~\newline
 \fullcite{Incapsula}\\
 ~\newline
+\fullcite{Hummen}\\
+~\newline
 \fullcite{Kozlov}\\
+~\newline
+\fullcite{Krebs2}\\
 ~\newline
 \fullcite{Krebs}\\
 ~\newline
 \fullcite{Martinez1}\\
 ~\newline
 \fullcite{Roman6017172}\\
+~\newline
+\fullcite{sec}\\
 ~\newline
 \fullcite{Suo6188257}\\
 ~\newline
