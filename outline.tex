@@ -18,26 +18,68 @@
 	\2 Internet of Things (IoT) security is currently not adequate.
 		\3 Many devices are vulnerable to various types of attacks.
 		\3 In September 2016, a security researcher had his website attacked by thousands of compromised IoT devices. (\cite{Krebs}; \cite{Incapsula}).
-	\2 Overview of the Literature
+		\3 A backdoor in Sony IP Cameras was also found in December of 2016 which put 4,250 devices at risk of being compromised by attackers. (\cite{sec}; \cite{Krebs2}).
+	\2 Background
 		\3 The literature outlines security risks in all layers of the IoT architecture. (\cite{Xiaohui6643029}; \cite{Zhao6746513}; \cite{Suo6188257}).
 			\4 However, there is some debate as to which layers need the most attention for future research. (\cite{Zhao6746513}; \cite{Kozlov}).
 		\3 The IoT needs a complete stack of protocols to ensure security. 
-			\4 The Datagram Transport Layer Security (DTLS) protocol has received a lot of attention from researchers. 
-			\4 However, other literature suggests that the Host Identity Protocol (HIP) would be a better choice. 
+			\4 The Datagram Transport Layer Security (DTLS) protocol has received a lot of attention from researchers. (\cite{Garcia-Morchon:2013:SII:2462096.2462117}).
+			\4 However, other literature suggests that the Host Identity Protocol (HIP) would be a better choice. (\cite{Garcia-Morchon:2013:SII:2462096.2462117}; \cite{Hummen}).
+		\3 Some governments are considering action on IoT security
+			\4 The Federal Trade Commission released a report detailing their recommendations. (\cite{ftc}).
+			\4 European Union lawmakers are considering new rules for manufacturers of IoT devices. (\cite{Stupp}).
 			
 \1 Methods
 \1 Security Risks for IoT Devices
+	\2 Current Security Risks
+		\3 Perception Layer
+			\4 In the perception layer, it is possible for attackers to physically replace components that compromise security. (\cite{Xiaohui6643029}).
+			\4 The literature also points out that devices at the perception layer are not powerful enough for complex security protocols. (\cite{Xiaohui6643029}).
+			\4 Perception layer devices could also be at risk of attack via traditional methods, like distributed denial of service. (\cite{Zhao6746513}).
+		\3 Network Layer
+			\4 Network layer, for the most part, has a complete security implementation. (\cite{Zhao6746513}).
+			\4 Existing problems include eavesdropping, illegal access, and others. (\cite{Zhao6746513}).
+		\3 Application Layer
+			\4 At the application layer, traditional security risks like software vulnerabilities are present. (\cite{Xiaohui6643029}; \cite{Zhao6746513}).
+			\4 Data at the application layer must be protected through authentication. (\cite{Zhao6746513}).
+			
 \1 Evaluating Protocols for IoT Security
+	\2 The Internet of Things needs a complete and standardized security stack. 
+	\2 CoAP
+		\3 CoAP suggestions for security standards
+	\2 IEEE 802.15.4
+	\2 6LoWPaN
 	\2 Datagram Transport Layer Security (DTLS)
+		\3 DTLS is TLS but over the UDP protocol.
+		\3 Mandatory standard for protection of CoAP messages (\cite{Garcia-Morchon:2013:SII:2462096.2462117}).
+		\3 DTLS was designed for traditional networks, but may be adopted for use with the IoT. (\cite{Keoh6817545}).
+		\3 DTLS allows for good interoperability, but lacks in efficiency. (\cite{Garcia-Morchon:2013:SII:2462096.2462117}).
 	\2 Host Identity Protocol (HIP)
-		\3 Comparison with DTLS
+		\3 HIP works by using Diffie-Hellman key exchange. 
+		\3 The literature found that HIP is more efficient than DTLS. (\cite{Garcia-Morchon:2013:SII:2462096.2462117}).
+			\4 HIP has less communication overhead.
+			\4 HIP also has less of a memory footprint.
 		\3 HIP Diet Exchange (HIP DEX)
-
+			\4 Extension to HIP that uses lightweight and static Diffie-Hellman authentication. (\cite{Hummen}).
+			\4 HIP DEX is optimized for low power devices. 
+			\4 Some literature has proposed extensions to HIP DEX which improve efficiency. (\cite{Hummen}).
 \1 Government Standards for the IoT  
+	\2 Current legal environment
+		\3 IoT devices do not currently have much regulation.
+		\3 Industry is self-regulating. (\cite{Weber201023}). 
 	\2 Requirements for legislation
+		\3 Literature recommends that countries enact similar legislation due to the amount of companies that sell products on a 
+			global scale. (\cite{Weber201023}). 
 	\2 U.S. Government regulation
-		\3 Federal Trade Commission Report
+		\3 Federal Trade Commission Report (\cite{ftc}).
+			\4 FTC recommends companies design products with security in mind from the start.
+			\4 FTC recommends companies minimize data collected on users.
+			\4 The FTC did not recommend any new legislation; however, they did recommend that Congress enact general data security legislation.
+		\3 House Energy and Commerce Committee meeting about IoT security
+		\3 Senate Commerce Committee meeting about IoT Security
 	\2 EU regulation
+		\3 EU lawmakers propose labeling requirement for IoT manufacturers (\cite{Stupp}).
+		\3 EU also considering adopting new privacy requirements. (\cite{Kozlov}).
 
 \1 Conclusion
 \end{outline}
