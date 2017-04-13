@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {american}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Introduction}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Methodology}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{3}

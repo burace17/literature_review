@@ -16,6 +16,10 @@ outline:
 	pdflatex outline.tex
 	biber outline
 	pdflatex outline.tex
+report:
+	pdflatex report.tex
+	biber report 
+	pdflatex report.tex
 clean:
 	rm *.aux
 	rm *.bbl
