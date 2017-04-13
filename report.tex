@@ -3,6 +3,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[citestyle=apa,style=apa,backend=biber]{biblatex}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\setlength\bibitemsep{2\itemsep}
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{bibliography.bib}
 
@@ -11,7 +15,7 @@
 \begin{document}
 \begin{titlepage}
 \centering
-	\vspace*{4.75cm}
+	\vspace*{5.75cm}
 	{\huge\bfseries A literature review of Internet of Things security\par}
 	\vspace{2cm}
 	Blair Urish\\
@@ -46,6 +50,11 @@ enim ad minim veniam, quis nostrud exercitation ullamco laboris
 \newpage
 \setcounter{page}{3}
 \tableofcontents
+\newpage
+
+\cleardoublepage
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
 \newpage
 
 \pagenumbering{arabic}
@@ -98,34 +107,37 @@ databases such as Scopus, IEEE, and the ACM. Search terms such as "Internet of T
 relevant articles in the databases. Web sources from industry leaders were used to provide background information surrounding
 the topic.\\ 
 
+
+\section*{Security Risks for IoT Devices}
+\addcontentsline{toc}{section}{Security Risks for IoT Devices}
+
+This section will discuss the security risks faced by current IoT devices. The section will use the three main layers of the IoT architecture to break down the risks. Before the risks at each layer are discussed,
+the IoT architecture will be formally defined. After that the risks found in the perception layer, network layer, and application layer will be discussed.
+
+\subsection*{Defining the IoT Architecture}
+\addcontentsline{toc}{subsection}{Defining the IoT Architecture}
+The literature generally breaks the IoT architecture down into three layers: perception, network, and application. (\cite{Zhao6746513}; \cite{Xiaohui6643029}). Some literature adds additional layers to further narrow down the purpose of each
+layer. (\cite{Granjal7005393}; \cite{Kozlov}; \cite{Suo6188257}). However, for the purposes of this report, three layers will be sufficient. The perception layer 
+generally includes the devices that allow an IoT device to interact with the physical world. A temperature sensor would be an example of a
+perception layer device. The network layer includes devices that allow the perception layer and application layer to interact through the Internet.
+Traditional network hardware is included in this layer. Finally, the application layer is defined as the software that allows end users to control
+and retrieve data from the perception layer devices. Below is a figure that gives more examples of devices that are commonly found at each layer.
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=10cm,keepaspectratio]{figure2_new.png}
+	\caption{Internet of Things Architecture (adapted from \cite{Zhao6746513})}
+	\label{fig:arch}
+\end{figure}
+
+\subsection*{Security Risks in the Perception Layer}
+\addcontentsline{toc}{subsection}{Security Risks in the Perception Layer}
+In the perception layer, devices are commonly in public with minimal security. The literature states that there is a risk of an attacker physically
+modifying a device at this layer. (\cite{Zhao6746513}; \cite{Xiaohui6643029}; \cite{Suo6188257}). Devices in the perception layer, for the most part,
+are not very powerful. Due to this limitation, they are often unable to use the same security mechanisms found in traditional computers. 
+(\cite{Suo6188257}; \cite{Granjal7005393}; \cite{Xiaohui6643029}). 
+
 \newpage
-\section*{References}
 \addcontentsline{toc}{section}{References}
-~\newline
-\fullcite{Capossele}\\
-~\newline
-\fullcite{Garcia-Morchon:2013:SII:2462096.2462117}\\
-~\newline
-\fullcite{Incapsula}\\
-~\newline
-\fullcite{Hummen}\\
-~\newline
-\fullcite{Kozlov}\\
-~\newline
-\fullcite{Krebs2}\\
-~\newline
-\fullcite{Krebs}\\
-~\newline
-\fullcite{Martinez1}\\
-~\newline
-\fullcite{Roman6017172}\\
-~\newline
-\fullcite{sec}\\
-~\newline
-\fullcite{Suo6188257}\\
-~\newline
-\fullcite{Xiaohui6643029}\\
-~\newline
-\fullcite{Zhao6746513}\\
+\printbibliography
 \end{flushleft}
 \end{document}

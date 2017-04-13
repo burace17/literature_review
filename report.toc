@@ -2,8 +2,16 @@
 \defcounter {refsection}{0}\relax 
 \select@language {american}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Figures}{iv}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Introduction}{1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Methodology}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{3}
+\contentsline {section}{Security Risks for IoT Devices}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Defining the IoT Architecture}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Security Risks in the Perception Layer}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{4}
