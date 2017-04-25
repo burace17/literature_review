@@ -131,10 +131,71 @@ and retrieve data from the perception layer devices. Below is a figure that give
 
 \subsection*{Security Risks in the Perception Layer}
 \addcontentsline{toc}{subsection}{Security Risks in the Perception Layer}
-In the perception layer, devices are commonly in public with minimal security. The literature states that there is a risk of an attacker physically
+In the perception layer, devices are commonly found in public with minimal physical security. The literature states that there is a risk of an attacker physically
 modifying a device at this layer. (\cite{Zhao6746513}; \cite{Xiaohui6643029}; \cite{Suo6188257}). Devices in the perception layer, for the most part,
-are not very powerful. Due to this limitation, they are often unable to use the same security mechanisms found in traditional computers. 
-(\cite{Suo6188257}; \cite{Granjal7005393}; \cite{Xiaohui6643029}). 
+are not very powerful. The devices use processors that prioritize efficiency and cost over speed. Due to this limitation, they are often unable to use the same security mechanisms found in traditional computers. 
+(\cite{Suo6188257}; \cite{Granjal7005393}; \cite{Xiaohui6643029}). Even traditional attack methods used to target conventional computers could be 
+used against the IoT. (\cite{Zhao6746513}). Attacks such as distributed denial of service (DDoS) could disrupt sensors from communicating with the devices that receive the gathered information. Devices in the perception layer are also suceptible to malware, as shown by the recent Mirai
+botnet which infected thousands of IoT devices. (\cite{Incapsula}). 
+
+\subsection*{Security Risks in the Network Layer}
+\addcontentsline{toc}{subsection}{Security Risks in the Network Layer}
+Many of the security risks in the network layer are already well-known, because they also apply to traditional computing platforms. 
+(\cite{Zhao6746513}; \cite{Xiaohui6643029}). According to Zhao and Ge, the security implementations found in the network layer are fairly complete, but
+the risks should not be ignored. The most common threats found in the network layer include man-in-the-middle attacks, illegal access due to 
+insufficient authentication measures, information eavesdropping, and many others. These types of attacks put the privacy of users at risk as most
+information transmitted is from the physical world. 
+
+\subsection*{Security Risks in the Application Layer}
+\addcontentsline{toc}{subsection}{Security Risks in the Application Layer}
+Like the network layer, many of the security risks present in the layer are also found on traditional computing platforms. The literature outlines
+risks such as software vulnerabilities and insecure authentication methods. (\cite{Zhao6746513}; \cite{Suo6188257}). Just like with traditional
+platforms, mistakes by programmers that introduce vulnerabilities like buffer overflow are still common with IoT software. For authentication,
+the developers must ensure that users are only allowed to access data they need. IoT devices commonly collect sensitive information that could
+violate the privacy of the public if it got into the wrong hands. (\cite{Zhang:2015:EST:2714576.2737091}). 
+
+\section*{IoT Security Protocol Standardization}
+\addcontentsline{toc}{section}{IoT Security Protocol Standardization}
+
+This section will first outline the need for a standardized suite of protocols to ensure security for the IoT. It will then evaluate various protocols
+that have been proposed and outline any debate found in the literature. The protocols that will be discussed include the Constrained Application
+Protocol (CoAP), IEEE 802.15.4, 6LoWPAN, Datagram Transport Layer Security (DTLS), and the Host Identity Protocol (HIP). 
+
+\subsection*{The Need for Standardization}
+\addcontentsline{toc}{subsection}{The Need for Standardization}
+Many of the protocols required to ensure security for the IoT already exist but most IoT devices are not powerful enough to use them. (\cite{Keoh6817545}; \cite{Granjal7005393}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). Currently, standardization efforts are underway by the
+Institute for Electrical and Electronics Engineers (IEEE) and the Internet Engineering Task Force (IETF). One project by the IETF is the
+Constrained Application Protocol (CoAP). CoAP is a protocol similar to HTTP that allows devices to make requests and receive responses. (\cite{Keoh6817545}). The most commonly used protocol used to secure CoAP is Datagram Transport Layer Security (DTLS). (\cite{Keoh6817545}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). 
+Some literature proposes the use of the Host Identity Protocol (HIP) as an alternative to DTLS. (\cite{Hummen}; \cite{Garcia-Morchon:2013:SII:2462096.2462117};). The conflict in the literature on this issue alone shows the need for standardization. As pointed out by Koeh et. al, the reason for the success of the HyperText Transfer Protocol (HTTP) has been the completely standardized protocol suite. For the Internet
+of Things to have a successful and secure future, the industry must agree on a standardized security suite.
+
+\subsection*{The Constrained Application Protocol}
+\addcontentsline{toc}{subsection}{The Constrained Application Protocol}
+
+
+\subsection*{Datagram Transport Layer Security}
+\addcontentsline{toc}{subsection}{Datagram Transport Layer Security}
+This section will begin by discussing the findings of Garcia-Morchon et. al. regarding the viability of Datagram Transport Layer security (DTLS)
+for securing CoAP messages. To start with, DTLS is simply TLS over the UDP protocol instead of TCP. The CoAP recommends using DTLS in place of any
+other method. However, one major issue with DTLS is that it is designed for traditional networks. (\cite{Capossele}). In the Garcia-Morchon et. al. report, the authors analyzed the performance of DTLS using a custom application running on a Redbee Econotag. The device
+was used to simulate a real world IoT device. The authors found that DTLS used a significant amount of memory due to the amount of messages sent. 
+The authors also found that DTLS does not perform well in a network with high packet loss. \\
+~\newline
+The work of Garcia-Morchon et. al. demonstrates the need for additional changes to enable DTLS to work with the IoT. Capossele, Cervo, De Cicco,
+and Petrioli released a report outlining their optimized DTLS implementation. For their work, they used a MagoNode to simulate the presence of an
+IoT device. The specifications of the test device were similar to the one used by Garcia-Morchon et. al., but with 16 KB of RAM instead of 128 KB.
+In order to make DTLS functional on their test device, the authors optimized modular arithmetic on large integers using their own assembly code.
+The authors also created their own ECC library to further optimize the cryptographic functions. The authors analyzed the results by separating their
+optimizations in order to see which ones had the greatest impact on performance. In the table below, one can see which optimization was performed,
+the time the operation took, the energy used, and the increase in ROM usage. 
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=7cm,keepaspectratio]{figure6.png}
+	\caption{Scalar Multiplication Time Comparison (\cite{Capossele})}
+	\label{fig:arch}
+\end{figure}
+
+As one can see from the figure, the optimizations together provide a large increase in performance, but at the expense of more ROM usage. 
 
 \newpage
 \addcontentsline{toc}{section}{References}

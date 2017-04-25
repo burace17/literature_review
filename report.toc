@@ -14,4 +14,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Security Risks in the Perception Layer}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{4}
+\contentsline {subsection}{Security Risks in the Network Layer}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Security Risks in the Application Layer}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{IoT Security Protocol Standardization}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Need for Standardization}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Constrained Application Protocol}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Datagram Transport Layer Security}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{7}
