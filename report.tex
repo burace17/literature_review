@@ -195,8 +195,17 @@ the time the operation took, the energy used, and the increase in ROM usage.
 	\label{fig:arch}
 \end{figure}
 
-As one can see from the figure, the optimizations together provide a large increase in performance, but at the expense of more ROM usage. 
+As one can see from the figure, the optimizations together provide a large increase in performance when doing scalar multiplication, but at the expense of more ROM usage. 
+The authors also analyzed how their optimizations improved the performance and energy usage when doing cyptographic functions. The figure below
+shows their results. 
 
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=7cm,keepaspectratio]{figure5.png}
+	\caption{Overhead and Energy Consumption After Optimization (\cite{Capossele})}
+	\label{fig:arch}
+\end{figure}
+
+Overall, the optimizations proposed by Capossele et. al. make DTLS a more viable option for securing the IoT. 
 \newpage
 \addcontentsline{toc}{section}{References}
 \printbibliography
