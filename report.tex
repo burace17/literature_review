@@ -177,20 +177,25 @@ of Things to have a successful and secure future, the industry must agree on a s
 \addcontentsline{toc}{subsection}{Datagram Transport Layer Security}
 This section will begin by discussing the findings of Garcia-Morchon et. al. regarding the viability of Datagram Transport Layer security (DTLS)
 for securing CoAP messages. To start with, DTLS is simply TLS over the UDP protocol instead of TCP. The CoAP recommends using DTLS in place of any
-other method. However, one major issue with DTLS is that it is designed for traditional networks. (\cite{Capossele}). In the Garcia-Morchon et. al. report, the authors analyzed the performance of DTLS using a custom application running on a Redbee Econotag. The device
+other method. The protocol is also considered to be the best suited protocol for securing CoAP messages. (\cite{Keoh6817545}). However, one major issue with DTLS is that it was designed for traditional networks. (\cite{Capossele}). 
+The IETF has created a working group called ``DTLS In Constrained Environment'', whose goal is to 
+come up with a DTLS implementation that is usable with the IoT. (\cite{Keoh6817545}). \\
+~\newline
+In a report by Garcia-Morchon et al., the authors analyzed the performance of DTLS using a custom application running on a Redbee Econotag. The device
 was used to simulate a real world IoT device. The authors found that DTLS used a significant amount of memory due to the amount of messages sent. 
 The authors also found that DTLS does not perform well in a network with high packet loss. \\
 ~\newline
-The work of Garcia-Morchon et. al. demonstrates the need for additional changes to enable DTLS to work with the IoT. Capossele, Cervo, De Cicco,
+The work of Garcia-Morchon et al. demonstrates the need for additional changes to enable DTLS to work with the IoT. 
+Capossele, Cervo, De Cicco,
 and Petrioli released a report outlining their optimized DTLS implementation. For their work, they used a MagoNode to simulate the presence of an
-IoT device. The specifications of the test device were similar to the one used by Garcia-Morchon et. al., but with 16 KB of RAM instead of 128 KB.
+IoT device. The specifications of the test device were similar to the one used by Garcia-Morchon et al., but with 16 KB of RAM instead of 128 KB.
 In order to make DTLS functional on their test device, the authors optimized modular arithmetic on large integers using their own assembly code.
 The authors also created their own ECC library to further optimize the cryptographic functions. The authors analyzed the results by separating their
 optimizations in order to see which ones had the greatest impact on performance. In the table below, one can see which optimization was performed,
 the time the operation took, the energy used, and the increase in ROM usage. 
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth,height=7cm,keepaspectratio]{figure6.png}
+	\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{figure6.png}
 	\caption{Scalar Multiplication Time Comparison (\cite{Capossele})}
 	\label{fig:arch}
 \end{figure}
@@ -205,7 +210,12 @@ shows their results.
 	\label{fig:arch}
 \end{figure}
 
-Overall, the optimizations proposed by Capossele et. al. make DTLS a more viable option for securing the IoT. 
+Overall, the optimizations proposed by Capossele et. al. make DTLS a more viable option for securing the IoT.
+
+\subsection*{Host Identity Protocol}
+\addcontentsline{toc}{subsection}{Host Identity Protocol}
+
+ 
 \newpage
 \addcontentsline{toc}{section}{References}
 \printbibliography
