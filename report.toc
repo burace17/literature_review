@@ -26,4 +26,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Datagram Transport Layer Security}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{7}
+\contentsline {subsection}{Host Identity Protocol}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{8}

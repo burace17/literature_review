@@ -215,7 +215,37 @@ Overall, the optimizations proposed by Capossele et. al. make DTLS a more viable
 \subsection*{Host Identity Protocol}
 \addcontentsline{toc}{subsection}{Host Identity Protocol}
 
- 
+As mentioned in the previous section, DTLS is not extremely well suited for use with the IoT. An alternative
+approach proposed by some literature is the use of the Host Identity Protocol (HIP). HIP makes use of public-key
+cryptography to establish connections. (\cite{Hummen}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). However,
+public-key cryptography is an expensive operation on a constrained platform like the IoT. Like DTLS, HIP must
+be tailored for use with the IoT. This section will discuss two approaches proposed by the literature. \\ 
+~\newline
+In an article by Hummen, Wirtz, Ziegeldorf, Hiller, and Wehrle, the authors analyzed the existing methods of 
+implementing HIP and focused on HIP Diet EXchange (HIP DEX). The first major challenge the authors encountered
+was the large amount of resources that public-key operations use. When an IoT device is performing a public-key operation,
+it is often unable to do any of its other tasks. The expensive operations also make it possible for even a single attacker
+to perform a denial of service attack on the device. In order to address these challenges, the authors proposed the following extensions to HIP DEX: 
+a ``comprehensive session resumption mechanism'', a ``collaborative puzzle-based denial of service protection mechanism'', and a
+``refined retransmission mechanism''. \\
+~\newline
+In the session resumption mechanism proposed by the authors, both devices will perform their most expensive protocol operations once during the handshake.
+If the connection needs to be reestablished, the devices can used the information they have saved to securely resume the session using a lighter weight
+session resumption handshake. The authors note that this technique could even be used with other protocols, such as DTLS. The technique does introduce some
+security risks, however. Hummen et al. state that it is possible for an attacker who is eavesdropping on the communications to replay a saved resumption
+handshake and gain unauthorized access to the network. In order to counteract this risk, a counter incremented upon each successful session resumption. 
+When the authors evaluated the results of session resumption in isolation, they found that it reduced computational overhead by at least 85.7\%. \\
+~\newline
+As mentioned previously, the authors proposed improvements to HIP DEX to reduce its vulnerability to denial of service (DoS) attacks. Currently to protect
+from DoS attacks, HIP DEX requires a puzzle mechanism to be introduced when a DoS is detected by the device. During normal operation, the puzzle is not used.
+Hummen et al. note that the mechanisms to detect an attack and to select an appropriate puzzle remain open research issues. In the authors proposal, attacks
+would be detected by keeping track of the number of public-key operations performed within a specified period. If the limit is exceeded, then a puzzle will
+be generated for the possible attacker. The authors propose that a high difficulty puzzle be generated for untrusted connections and a low difficulty puzzle
+for trusted connections. When evaluating the results, the proposed DoS protection was found to successfully protect the IoT device from attack while still
+allowing legitimate connections to take place. \\
+~\newline
+The final extension proposed by the authors was a retransmission mechanism. 
+
 \newpage
 \addcontentsline{toc}{section}{References}
 \printbibliography
