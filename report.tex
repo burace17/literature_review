@@ -244,7 +244,22 @@ be generated for the possible attacker. The authors propose that a high difficul
 for trusted connections. When evaluating the results, the proposed DoS protection was found to successfully protect the IoT device from attack while still
 allowing legitimate connections to take place. \\
 ~\newline
-The final extension proposed by the authors was a retransmission mechanism. 
+The final extension proposed by the authors was a retransmission mechanism. Currently, the HIP DEX standard specifies an aggressive retransmission strategy
+for handling the loss of messages. In their report, the authors propose an adaptive retransmission strategy that bases timeout values on the 
+predicted transmission time for the message. However, it is possible that a device may have only received part of a message and a full retransmission
+is not necessary. To address this, the authors propose the use of pre-fetching message information to delay the retransmission of messages while the 
+remaining parts are still being transmitted. Finally, a new message type proposed by the authors allows the device responding to a message to notify the
+sender that the message was received. This message would be send before the receiver does any cryptographic processing. When evaluating the results, 
+Hummen et al. found that their retransmission strategy was a significant improvement over both HIP DEX and DTLS. The figure below shows their results.
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=6cm,keepaspectratio]{figure7.png}
+	\caption{Results of HIP DEX Retransmission Strategy Optimization (\cite{Hummen})}
+	\label{fig:arch}
+\end{figure}
+
+Overall, the extensions proposed by Hummen et al. provide a significant increase in performance for HIP DEX for use on constrained platforms like the 
+IoT. The memory overhead created by these extensions is minimal, amounting to only 5.6 KB of ROM and 0.2 KB of RAM. 
 
 \newpage
 \addcontentsline{toc}{section}{References}
