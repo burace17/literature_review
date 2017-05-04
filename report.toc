@@ -42,9 +42,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Conclusions}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Government Action on IoT Security}{10}
+\contentsline {section}{Government Action on IoT Security}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Current Regulatory Environment}{10}
+\contentsline {subsection}{Current Regulatory Environment}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Regulatory Proposals}{10}
 \defcounter {refsection}{0}\relax 
@@ -54,4 +54,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Conclusion}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{13}
+\contentsline {section}{References}{12}

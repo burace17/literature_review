@@ -40,9 +40,11 @@ important that the security risks IoT devices face are properly identified and a
  In the literature, numerous security risks have been identified in every layer of the IoT architecture. These risks include 
 distributed denial of service, unauthorized access, and many others. In order to mitigate these risks the literature has suggested tailoring existing
 protocols to the constrained hardware found in the IoT. These protocols include Datagram Transport Layer Security (DTLS) and the Host Identity Protocol (HIP).
-In the literature, several extensions to DTLS and HIP were proposed. One of the extensions, HIP-PSK, provided a substantial 
+In the literature, several extensions to DTLS and HIP were proposed. The literature generally found that HIP outperformed DTLS. However, a gap was identified
+in the research due to some authors not comparing their results to the protocols without optimization. This results in the optimizations being hard to compare.
 Governments are also considering taking action to ensure the security of the IoT. In the European Union, a labeling requirement for devices has been 
-proposed. In the U.S., the FTC has only recommended general cyber security legislation. 
+proposed. In the U.S., the FTC has only recommended general cyber security legislation and would prefer that the industry remain self-regulating. 
+Currently, the FTC is under new leadership so it is not yet clear when or if any action will be taken. 
 \end{flushleft}
 \end{abstract}
 
@@ -95,7 +97,7 @@ that this report aims to answer:
 
 \begin{itemize}
 \item What types of security risks do IoT devices face today?
-\item What types of security standards has the literature proposed and what are the pros and cons of each standard?
+\item What types of security standards has the literature proposed?
 \item Are there any government standards in place or are there any being considered?
 \end{itemize}
 
@@ -249,16 +251,16 @@ implementing HIP and focused on HIP Diet EXchange (HIP DEX). The first major cha
 was the large amount of resources that public-key operations use. When an IoT device is performing a public-key operation,
 it is often unable to do any of its other tasks. The expensive operations also make it possible for even a single attacker
 to perform a denial of service attack on the device. In order to address these challenges, the authors proposed the following extensions to HIP DEX: 
-a ``comprehensive session resumption mechanism'', a ``collaborative puzzle-based denial of service protection mechanism'', and a
-``refined retransmission mechanism''. \\
+a ``comprehensive session resumption mechanism,'' a ``collaborative puzzle-based denial of service protection mechanism,'' and a
+``refined retransmission mechanism.'' \\
 ~\newline
 \textit{Session Resumption Mechanism}\\ 
 ~\newline
 In the session resumption mechanism proposed by the authors, both devices will perform their most expensive protocol operations once during the handshake.
-If the connection needs to be reestablished, the devices can used the information they have saved to securely resume the session using a lighter weight
+If the connection needs to be reestablished, the devices can use the information they have saved to securely resume the session using a lighter weight
 session resumption handshake. The authors note that this technique could even be used with other protocols, such as DTLS. The technique does introduce some
 security risks, however. Hummen et al. state that it is possible for an attacker who is eavesdropping on the communications to replay a saved resumption
-handshake and gain unauthorized access to the network. In order to counteract this risk, a counter incremented upon each successful session resumption. 
+handshake and gain unauthorized access to the network. In order to counteract this risk, a counter is incremented upon each successful session resumption. 
 When the authors evaluated the results of session resumption in isolation, they found that it reduced computational overhead by at least 85.7\%. \\
 ~\newline
 \textit{DoS Protection Improvements}\\ 
@@ -279,7 +281,8 @@ predicted transmission time for the message. However, it is possible that a devi
 is not necessary. To address this, the authors propose the use of pre-fetching message information to delay the retransmission of messages while the 
 remaining parts are still being transmitted. Finally, a new message type proposed by the authors allows the device responding to a message to notify the
 sender that the message was received. This message would be send before the receiver does any cryptographic processing. When evaluating the results, 
-Hummen et al. found that their retransmission strategy was a significant improvement over both HIP DEX and DTLS. The figure below shows their results.
+Hummen et al. found that their retransmission strategy was a significant improvement over both HIP DEX and DTLS. The figure below shows their results and compares
+the performance to HIP DEX and DTLS. Each protocol is tested with a differing amount of data being lost during the handshake as shown by the loss ratio in the figure. 
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth,height=6cm,keepaspectratio]{figure7.png}
@@ -325,8 +328,9 @@ U.S. House Energy and Commerce Committee, Representative Walden noted that one o
 \subsection*{Regulatory Proposals}
 \addcontentsline{toc}{subsection}{Regulatory Proposals}
 
-In the U.S., the Federal Trade Commission released a report analyzing the current state of the Internet of Things industry and released their recommendations
-to Congress. (\cite{ftc}). This report will be discussed first, and after that, the proposals from the European Union will be discussed.
+This section will discuss the work being done by the U.S. Federal Trade Commission and the European Union to address the security problems of the Internet of Things.
+ 
+
 
 \subsubsection*{U.S. Government Proposals}
 \addcontentsline{toc}{subsubsection}{U.S. Government Proposals}
