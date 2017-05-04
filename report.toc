@@ -40,13 +40,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{HIP-PSK proposition by Garcia-Morchon et al.}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Government Action on IoT Security}{9}
+\contentsline {subsection}{Conclusions}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Government Action on IoT Security}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Current Regulatory Environment}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Regulatory Proposals}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Federal Trade Commission Report}{10}
+\contentsline {subsubsection}{U.S. Government Proposals}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{European Union Proposals}{11}
 \defcounter {refsection}{0}\relax 

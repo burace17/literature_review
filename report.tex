@@ -287,7 +287,7 @@ Hummen et al. found that their retransmission strategy was a significant improve
 	\label{fig:arch}
 \end{figure}
 
-Overall, the extensions proposed by Hummen et al. provide a significant increase in performance for HIP DEX for use on constrained platforms like the 
+The extensions proposed by Hummen et al. provide a significant increase in performance for HIP DEX for use on constrained platforms like the 
 IoT. However, there are also other approaches being considered by the literature. To conclude this section, the work of Garcia-Morchon, Keoh, Kumar,
 Moreno-Sanchez, Vidal-Meca, and Ziegeldorf will be discussed. 
 
@@ -297,7 +297,15 @@ In their report, the authors proposed an alternative version of HIP that they ca
 to use a pre-shared key (PSK). In their protocol, a more lightweight challenge-based authentication mechanism can be used instead of Diffie-Hellman key
 exchange. The remainder of the protocol is identical to HIP-DEX. Garcia-Morchon et al. also propose the use of AMIKEY for key management with HIP-PSK
 and their optimized DTLS implementation. To evaluate the results, the authors compared HIP-PSK to their own optimized version of DTLS. They found that 
-HIP-PSK performed better than DTLS, but DTLS provided better interoperability. The authors did not compare HIP-PSK to HIP-DEX or any other variations. 
+HIP-PSK performed better than DTLS, but DTLS provided better interoperability. The authors did not compare HIP-PSK to HIP-DEX or any other variations.
+
+\subsection*{Conclusions}
+\addcontentsline{toc}{subsection}{Conclusions}
+Overall, the propositions discussed in this section make both HIP and DTLS more viable protocols for use with the IoT. However, there are still gaps in the 
+research that need to be filled in order to choose one protocol to fit in the standardized security suite mentioned earlier. The HIP-PSK proposition by 
+Garcia-Morchon et al. sounds like a very promising solution, however, the authors did not compare their protocol to HIP and DTLS without modification. This
+makes it harder for researchers studying these protocols to decide if HIP-PSK performs better than the HIP-DEX extensions proposed by Hummen et al., for example.
+Once gaps like this are filled, the IoT industry will be much closer to coming up with a standardized security stack. 
 
 \section*{Government Action on IoT Security}
 \addcontentsline{toc}{section}{Government Action on IoT Security}
@@ -320,8 +328,8 @@ U.S. House Energy and Commerce Committee, Representative Walden noted that one o
 In the U.S., the Federal Trade Commission released a report analyzing the current state of the Internet of Things industry and released their recommendations
 to Congress. (\cite{ftc}). This report will be discussed first, and after that, the proposals from the European Union will be discussed.
 
-\subsubsection*{Federal Trade Commission Report}
-\addcontentsline{toc}{subsubsection}{Federal Trade Commission Report}
+\subsubsection*{U.S. Government Proposals}
+\addcontentsline{toc}{subsubsection}{U.S. Government Proposals}
 
 In January 2015, the FTC released a staff report with their findings regarding the security of the IoT. They first discussed the risks to the IoT that 
 they have identified. After that, the FTC report summarized the discussions at their IoT workshop where attendees were able to give their thoughts on the
@@ -354,7 +362,9 @@ their energy efficiency and cars with their fuel efficiency. Many companies are 
 (\cite{Gardner}). As mentioned in the article by Stephen Gardner, companies would prefer if the system were voluntary. They also note that the labeling 
 criteria would have to evolve quickly because technology is always changing.\\
 ~\newline
-
+If the European Union ends up adopting this proposal, it will provide valuable information to U.S. lawmakers who may be considering similar approaches. As mentioned
+earlier, however, it will be important that countries do not have regulations that differ significantly. If the EU proposal is found to be successful, the U.S. should
+adopt something very similar that companies will be able to follow easily without increasing costs. 
 
 
 
@@ -362,7 +372,7 @@ criteria would have to evolve quickly because technology is always changing.\\
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 
-The main purpose of this paper was to review the literature surrounding the security of the Internet of Things with a focus on the current security risks,
+The main purpose of this paper was to review the literature surrounding the security of the Internet of Things with a focus on the current security risks, security
 standards, and government regulations. As outlined in the report, the Internet of Things is a growing industry with lots of potential for innovation. 
 However, the industry currently faces many security risks that have already resulted in the disruption of service on many websites. While the literature
 seems to be in agreement on what the current risks are, there is some debate as to what kind of new standards should be used to mitigate them. Organizations
