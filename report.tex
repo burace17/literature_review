@@ -27,7 +27,7 @@
 	Professor\\
 	Department of Computer Science\\
 	\vspace{1cm}
-	May 4 2017
+	May 4, 2017
 \end{titlepage}
 
 
@@ -131,7 +131,7 @@ and retrieve data from the perception layer devices. Below is a figure that give
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth,height=10cm,keepaspectratio]{figure2_new.png}
-	\caption{Internet of Things Architecture (adapted from \cite{Zhao6746513})}
+	\caption[Internet of Things Architecture]{Internet of Things Architecture (adapted from \cite{Zhao6746513})}
 	\label{fig:arch}
 \end{figure}
 
@@ -185,7 +185,7 @@ receive responses. In the figure below, a basic CoAP request and response is dis
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{figure8.png}
-	\caption{A Basic CoAP Interaction (\cite{Capossele})}
+	\caption[A Basic CoAP Interaction]{A Basic CoAP Interaction (\cite{Capossele})}
 	\label{fig:arch}
 \end{figure}
 
@@ -216,17 +216,17 @@ the time the operation took, the energy used, and the increase in ROM usage.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth,height=5cm,keepaspectratio]{figure6.png}
-	\caption{Scalar Multiplication Time Comparison (\cite{Capossele})}
+	\caption[Scalar Multiplication Time Comparison]{Scalar Multiplication Time Comparison (\cite{Capossele})}
 	\label{fig:arch}
 \end{figure}
 
 As one can see from the figure, the optimizations together provide a large increase in performance when doing scalar multiplication, but at the expense of more ROM usage. 
-The authors also analyzed how their optimizations improved the performance and energy usage when doing cyptographic functions. The figure below
+The authors also analyzed how their optimizations improved the performance and energy usage when doing cryptographic functions. The figure below
 shows their results. 
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth,height=7cm,keepaspectratio]{figure5.png}
-	\caption{Overhead and Energy Consumption After Optimization (\cite{Capossele})}
+	\caption[Overhead and Energy Consumption After Optimization]{Overhead and Energy Consumption After Optimization (\cite{Capossele})}
 	\label{fig:arch}
 \end{figure}
 
@@ -242,8 +242,8 @@ cryptography to establish connections. (\cite{Hummen}; \cite{Garcia-Morchon:2013
 public-key cryptography is an expensive operation on a constrained platform like the IoT. Like DTLS, HIP must
 be tailored for use with the IoT. This section will discuss two approaches proposed by the literature. 
 
-\subsubsection*{HIP-DEX Optimizations proposed by Hummen et al.}
-\addcontentsline{toc}{subsubsection}{HIP-DEX Optimizations proposed by Hummen et al.}
+\subsubsection*{HIP-DEX optimizations proposed by Hummen et al.}
+\addcontentsline{toc}{subsubsection}{HIP-DEX optimizations proposed by Hummen et al.}
 In an article by Hummen, Wirtz, Ziegeldorf, Hiller, and Wehrle, the authors analyzed the existing methods of 
 implementing HIP and focused on HIP Diet EXchange (HIP DEX). The first major challenge the authors encountered
 was the large amount of resources that public-key operations use. When an IoT device is performing a public-key operation,
@@ -283,7 +283,7 @@ Hummen et al. found that their retransmission strategy was a significant improve
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth,height=6cm,keepaspectratio]{figure7.png}
-	\caption{Results of HIP DEX Retransmission Strategy Optimization (\cite{Hummen})}
+	\caption[Results of HIP DEX Retransmission Strategy Optimization]{Results of HIP DEX Retransmission Strategy Optimization (\cite{Hummen})}
 	\label{fig:arch}
 \end{figure}
 

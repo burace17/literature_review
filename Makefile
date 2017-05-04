@@ -20,6 +20,8 @@ report:
 	pdflatex report.tex
 	biber report 
 	pdflatex report.tex
+letter:
+	pdflatex letteroftransmittal.tex
 clean:
 	rm *.aux
 	rm *.bbl

@@ -36,7 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Host Identity Protocol}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{HIP-DEX Optimizations proposed by Hummen et al.}{7}
+\contentsline {subsubsection}{HIP-DEX optimizations proposed by Hummen et al.}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{HIP-PSK proposition by Garcia-Morchon et al.}{9}
 \defcounter {refsection}{0}\relax 
