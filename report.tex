@@ -60,15 +60,15 @@ proposed. In the U.S., the FTC has only recommended general cyber security legis
 \begin{flushleft}
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-This section will discuss background information related to the report's topic. The section will contain the historical background of the issue, a brief
-overview of the current research, and discuss the purpose of this research.
+This section will discuss background information regarding the security of the Internet of Things, give a brief overview of the current research,
+describe the specific purpose of this report, and briefly outline the overall structure of the report.
 
 \subsection*{Historical Background}
 \addcontentsline{toc}{subsection}{Historical Background}
 By 2020, it is expected that there will be 
-25 million Internet of Things devices connected to the Internet. (\cite{Martinez1}). With so many devices, it is important that manufacturers take security very seriously. 
-In September 2016, a security researcher named Brian Krebs had his website temporarily taken down due to a Distributed Denial of Service attack. The attacker
-used thousands of malware-infected IoT devices and sent 600 Gigabits per second of traffic to Krebs' blog. (\cite{Krebs}). The malware, called Mirai, 
+25 billion Internet of Things (IoT) devices connected to the Internet. (\cite{Martinez1}). With so many devices, it is important that manufacturers take security very seriously. 
+In September 2016, a security researcher named Brian Krebs had his website temporarily taken down due to a distributed denial of service attack. The attacker
+used thousands of malware-infected IoT devices and sent 600 gigabits per second of traffic to Krebs' blog. (\cite{Krebs}). The malware, called Mirai, 
 infected IoT devices with poor security. An analysis showed that the devices were mainly CCTV cameras, DVRs, and routers. (\cite{Incapsula}).\\
 ~\newline
 A few months later, in December 2016, SEC Consult discovered a backdoor in Sony IPELA Engine IP Cameras that allowed for full remote access over the Internet. (\cite{sec}). The backdoor could allow an attacker
@@ -90,19 +90,26 @@ DTLS. Some literature has even proposed extensions to HIP that would further red
 \addcontentsline{toc}{subsection}{Purpose of the Research}
 The purpose of this literature review is to synthesize the existing research regarding the security risks, standards, and government action into one report. There are many different points of view in the
 literature about which areas of the IoT are most at risk. There is also conflict in the literature regarding which standards should be used and how they should be implemented. With this literature review,
-all of this debate will be collected into one report which will make it easier for future research to be done. 
+all of this debate will be collected into one report which will make it easier for future research to be done. Below are the specific research questions
+that this report aims to answer:
+
+\begin{itemize}
+\item What types of security risks do IoT devices face today?
+\item What types of security standards has the literature proposed and what are the pros and cons of each standard?
+\item Are there any government standards in place or are there any being considered?
+\end{itemize}
 
 \subsection*{Structure of the Report}
 \addcontentsline{toc}{subsection}{Structure of the Report}
 The report will first cover the methods used to gather the relevant research. Next, the report will discuss the security risks for current IoT devices. Then, the report will synthesize the research being
-done to develop new security standards and protocols. The report will then discuss current and future government standards for IoT security. Finally, the findings of the report will be summarized in the conclusion
+done to develop new security standards and protocols. After that, the report will discuss current and future government standards for IoT security. Finally, the findings of the report will be summarized in the conclusion
 section.
 
 \section*{Methodology}
 \addcontentsline{toc}{section}{Methodology}
 
 To create the report, information from academic journals and conference proceedings were used. These articles were found in 
-databases such as Scopus, IEEE, and the ACM. Search terms such as "Internet of Things" and "security" were used to locate
+databases such as Scopus, IEEE, and the ACM. Search terms such as ``Internet of Things'' and ``security'' were used to locate
 relevant articles in the databases. Web sources from industry leaders were used to provide background information surrounding
 the topic.\\ 
 
@@ -111,7 +118,7 @@ the topic.\\
 \addcontentsline{toc}{section}{Security Risks for IoT Devices}
 
 This section will discuss the security risks faced by current IoT devices. The section will use the three main layers of the IoT architecture to break down the risks. Before the risks at each layer are discussed,
-the IoT architecture will be formally defined. After that the risks found in the perception layer, network layer, and application layer will be discussed.
+the IoT architecture will be formally defined. After that, the risks found in the perception layer, network layer, and application layer will be discussed.
 
 \subsection*{Defining the IoT Architecture}
 \addcontentsline{toc}{subsection}{Defining the IoT Architecture}
@@ -134,22 +141,22 @@ In the perception layer, devices are commonly found in public with minimal physi
 modifying a device at this layer. (\cite{Zhao6746513}; \cite{Xiaohui6643029}; \cite{Suo6188257}). Devices in the perception layer, for the most part,
 are not very powerful. The devices use processors that prioritize efficiency and cost over speed. Due to this limitation, they are often unable to use the same security mechanisms found in traditional computers. 
 (\cite{Suo6188257}; \cite{Granjal7005393}; \cite{Xiaohui6643029}). Even traditional attack methods used to target conventional computers could be 
-used against the IoT. (\cite{Zhao6746513}). Attacks such as distributed denial of service (DDoS) could disrupt sensors from communicating with the devices that receive the gathered information. Devices in the perception layer are also suceptible to malware, as shown by the recent Mirai
+used against the IoT. (\cite{Zhao6746513}). Attacks such as distributed denial of service (DDoS) could disrupt sensors from communicating with the devices that receive the gathered information. Devices in the perception layer are also susceptible to malware, as shown by the recent Mirai
 botnet which infected thousands of IoT devices. (\cite{Incapsula}). 
 
 \subsection*{Security Risks in the Network Layer}
 \addcontentsline{toc}{subsection}{Security Risks in the Network Layer}
 Many of the security risks in the network layer are already well-known, because they also apply to traditional computing platforms. 
 (\cite{Zhao6746513}; \cite{Xiaohui6643029}). According to Zhao and Ge, the security implementations found in the network layer are fairly complete, but
-the risks should not be ignored. The most common threats found in the network layer include man-in-the-middle attacks, illegal access due to 
-insufficient authentication measures, information eavesdropping, and many others. These types of attacks put the privacy of users at risk as most
-information transmitted is from the physical world. 
+the risks should not be ignored. Zhao and Ge also found that the most common threats found in the network layer include man-in-the-middle attacks, illegal access due to 
+insufficient authentication measures, and information eavesdropping. These types of attacks put the privacy of users at risk because most of the 
+information being transmitted is from the physical world.
 
 \subsection*{Security Risks in the Application Layer}
 \addcontentsline{toc}{subsection}{Security Risks in the Application Layer}
 Like the network layer, many of the security risks present in the layer are also found on traditional computing platforms. The literature outlines
 risks such as software vulnerabilities and insecure authentication methods. (\cite{Zhao6746513}; \cite{Suo6188257}). Just like with traditional
-platforms, mistakes by programmers that introduce vulnerabilities like buffer overflow are still common with IoT software. For authentication,
+platforms, mistakes by programmers that introduce vulnerabilities like buffer overflow are still common with IoT software. (\cite{Zhao6746513}; \cite{Xiaohui6643029}).  For authentication,
 the developers must ensure that users are only allowed to access data they need. IoT devices commonly collect sensitive information that could
 violate the privacy of the public if it got into the wrong hands. (\cite{Zhang:2015:EST:2714576.2737091}). 
 
@@ -164,8 +171,9 @@ Protocol (CoAP), Datagram Transport Layer Security (DTLS), and the Host Identity
 \addcontentsline{toc}{subsection}{The Need for Standardization}
 Many of the protocols required to ensure security for the IoT already exist but most IoT devices are not powerful enough to use them. (\cite{Keoh6817545}; \cite{Granjal7005393}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). Currently, standardization efforts are underway by the
 Institute for Electrical and Electronics Engineers (IEEE) and the Internet Engineering Task Force (IETF). One project by the IETF is the
-Constrained Application Protocol (CoAP). CoAP is a protocol similar to HTTP that allows devices to make requests and receive responses. (\cite{Keoh6817545}). The most commonly used protocol used to secure CoAP is Datagram Transport Layer Security (DTLS). (\cite{Keoh6817545}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). 
-Some literature proposes the use of the Host Identity Protocol (HIP) as an alternative to DTLS. (\cite{Hummen}; \cite{Garcia-Morchon:2013:SII:2462096.2462117};). The conflict in the literature on this issue alone shows the need for standardization. As pointed out by Koeh et. al, the reason for the success of the HyperText Transfer Protocol (HTTP) has been the completely standardized protocol suite. For the Internet
+Constrained Application Protocol (CoAP). CoAP is a protocol similar to HTTP that allows devices to make requests and receive responses. 
+(\cite{Keoh6817545}; \cite{Capossele}). The most commonly used protocol used to secure CoAP is Datagram Transport Layer Security (DTLS). (\cite{Keoh6817545}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). 
+Some literature proposes the use of the Host Identity Protocol (HIP) as an alternative to DTLS. (\cite{Hummen}; \cite{Garcia-Morchon:2013:SII:2462096.2462117}). The conflict in the literature on this issue alone shows the need for standardization. As pointed out by Koeh et. al, the reason for the success of the HyperText Transfer Protocol (HTTP) has been the completely standardized protocol suite. For the Internet
 of Things to have a successful and secure future, the industry must agree on a standardized security suite.
 
 \subsection*{The Constrained Application Protocol}
@@ -188,7 +196,8 @@ the Constrained Application Protocol.
 \addcontentsline{toc}{subsection}{Datagram Transport Layer Security}
 This section will begin by discussing the findings of Garcia-Morchon et. al. regarding the viability of Datagram Transport Layer Security (DTLS)
 for securing CoAP messages. To start with, DTLS is simply TLS over the UDP protocol instead of TCP. The CoAP recommends using DTLS in place of any
-other method. The protocol is also considered to be the best suited protocol for securing CoAP messages. (\cite{Keoh6817545}). However, one major issue with DTLS is that it was designed for traditional networks. (\cite{Capossele}). 
+other method. Some literature argues that DTLS is the best suited protocol to secure CoAP. (\cite{Keoh6817545}). However, one major issue with DTLS is that it was designed for traditional networks. (\cite{Capossele}). 
+Since IoT devices generally run on constrained hardware, it is necessary for the protocol to be specifically tailored for the IoT.
 The IETF has created a working group called ``DTLS In Constrained Environment'', whose goal is to 
 come up with a DTLS implementation that is usable with the IoT. (\cite{Keoh6817545}). \\
 ~\newline
@@ -221,7 +230,8 @@ shows their results.
 	\label{fig:arch}
 \end{figure}
 
-Overall, the optimizations proposed by Capossele et. al. make DTLS a more viable option for securing the IoT.
+Overall, the optimizations proposed by Capossele et. al. address the major problem preventing DTLS from being adopted with the IoT: its efficiency.
+However, other literature suggests that the Host Identity Protocol may be a better option. This protocol will be discussed in the next section.
 
 \subsection*{Host Identity Protocol}
 \addcontentsline{toc}{subsection}{Host Identity Protocol}
@@ -338,7 +348,16 @@ Overall, the FTC's stance that the IoT should be self-regulating is in sharp con
 \subsubsection*{European Union Proposals}
 \addcontentsline{toc}{subsubsection}{European Union Proposals}
 
-The European Commission has been drafting new legislation to address the security of the Internet of Things. (\cite{Stupp}). 
+The European Commission has been drafting new legislation to address the security of the Internet of Things. (\cite{Stupp}). The new rules would require
+manufacturers to label their devices based on whether the EU has found the device to be secure. This would be similar to how appliances are labeled with
+their energy efficiency and cars with their fuel efficiency. Many companies are doubting whether labeling is the right approach to solving this problem.
+(\cite{Gardner}). As mentioned in the article by Stephen Gardner, companies would prefer if the system were voluntary. They also note that the labeling 
+criteria would have to evolve quickly because technology is always changing.\\
+~\newline
+
+
+
+
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}

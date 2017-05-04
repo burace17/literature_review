@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Security Risks in the Perception Layer}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Security Risks in the Network Layer}{3}
+\contentsline {subsection}{Security Risks in the Network Layer}{4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Security Risks in the Application Layer}{4}
 \defcounter {refsection}{0}\relax 
@@ -38,18 +38,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{HIP-DEX Optimizations proposed by Hummen et al.}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{HIP-PSK proposition by Garcia-Morchon et al.}{8}
+\contentsline {subsubsection}{HIP-PSK proposition by Garcia-Morchon et al.}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Government Action on IoT Security}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Current Regulatory Environment}{9}
+\contentsline {subsection}{Current Regulatory Environment}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Regulatory Proposals}{9}
+\contentsline {subsection}{Regulatory Proposals}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Federal Trade Commission Report}{9}
+\contentsline {subsubsection}{Federal Trade Commission Report}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{European Union Proposals}{10}
+\contentsline {subsubsection}{European Union Proposals}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Conclusion}{10}
+\contentsline {section}{Conclusion}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{12}
+\contentsline {section}{References}{13}
