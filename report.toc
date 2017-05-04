@@ -46,10 +46,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Regulatory Proposals}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Federal Trade Commission Report}{10}
+\contentsline {subsubsection}{Federal Trade Commission Report}{9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{European Union Proposals}{10}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Conclusion}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{11}
+\contentsline {section}{References}{12}
